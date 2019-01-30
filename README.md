@@ -8,7 +8,7 @@ MVVM (Model-View-ViewModel) is derived from MVC(Model-View-Controller). It is in
 
  * Model: It is simillar to model layer in MVC (contains data business logic)
  * View: UIViews + UIViewControllers (We treat both layout view and controllers as View)
- * iewModel: A mediator to glue two above layer together.
+ * Model: A mediator to glue two above layer together.
           
 An important point in MVVM is that it uses a binder as communication tool between View and ViewModel layers. A technique named Data Binding is used.
 
