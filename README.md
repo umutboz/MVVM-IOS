@@ -12,9 +12,9 @@ MVVM (Model-View-ViewModel) is derived from MVC(Model-View-Controller). It is in
           
 An important point in MVVM is that it uses a binder as communication tool between View and ViewModel layers. A technique named Data Binding is used.
 
-Sample
+**Sample**
 A simple app which shows the most stared Github repositories written by Swift.
 
-Libraries
+**Libraries**
 Alamofire + Networking perform HTTP requests under Model layer.
 RxSwift + RxCocoa to do "data binding" job which binds ViewModel and View
