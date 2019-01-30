@@ -18,3 +18,11 @@ A simple app which shows the most stared Github repositories written by Swift.
 ## Libraries
 Alamofire + Networking perform HTTP requests under Model layer.
 RxSwift + RxCocoa to do "data binding" job which binds ViewModel and View
+
+
+![alt text](https://github.com/umutboz/MVVM-IOS/blob/master/MVVM%20Poc/mvvm-model.png)
+![alt text](https://github.com/umutboz/MVVM-IOS/blob/master/MVVM%20Poc/mvvm-repository.png)
+
+![alt text](https://github.com/umutboz/MVVM-IOS/blob/master/MVVM%20Poc/mvvm-viewmodel.png)
+![alt text](https://github.com/umutboz/MVVM-IOS/blob/master/MVVM%20Poc/mvvm-viewcontroller1.png)
+![alt text](https://github.com/umutboz/MVVM-IOS/blob/master/MVVM%20Poc/mvvm-viewcontroller2.png)
