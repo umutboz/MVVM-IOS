@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		4C4393AD22018C0A0009337D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4393AC22018C0A0009337D /* AppDelegate.swift */; };
-		4C4393AF22018C0A0009337D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4393AE22018C0A0009337D /* ViewController.swift */; };
 		4C4393B422018C0B0009337D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4393B322018C0B0009337D /* Assets.xcassets */; };
 		4C4393B722018C0B0009337D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4393B522018C0B0009337D /* LaunchScreen.storyboard */; };
 		4C87CD722202260400583F20 /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87CD712202260400583F20 /* ProjectListViewController.swift */; };
 		4C87CD792202273700583F20 /* ProjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C87CD782202273700583F20 /* ProjectListViewModel.swift */; };
 		4C87CD7B22022E2300583F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD7A22022E2300583F20 /* Main.storyboard */; };
-		4C9D8C952201EACC00DB60F8 /* GitHubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C942201EACC00DB60F8 /* GitHubApi.swift */; };
+		4C87CD7D2202350300583F20 /* mvvm-model.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD7C2202350300583F20 /* mvvm-model.png */; };
+		4C87CD7F2202357900583F20 /* mvvm-repository.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD7E2202357900583F20 /* mvvm-repository.png */; };
+		4C87CD81220235F000583F20 /* mvvm-viewmodel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD80220235F000583F20 /* mvvm-viewmodel.png */; };
+		4C87CD832202369300583F20 /* mvvm-viewcontroller1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD822202369300583F20 /* mvvm-viewcontroller1.png */; };
+		4C87CD852202369C00583F20 /* mvvm-viewcontroller2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C87CD842202369C00583F20 /* mvvm-viewcontroller2.png */; };
+		4C9D8C952201EACC00DB60F8 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */; };
 		4C9D8C972201EB2100DB60F8 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C962201EB2100DB60F8 /* ProjectModel.swift */; };
 		4C9D8C992201EB6D00DB60F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C982201EB6D00DB60F8 /* UserModel.swift */; };
 		87D05208B8B154F2F94B3000 /* Pods_MVVM_Poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995326878AC6101EF1FBDA28 /* Pods_MVVM_Poc.framework */; };
@@ -23,14 +27,18 @@
 /* Begin PBXFileReference section */
 		4C4393A922018C0A0009337D /* MVVM Poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4393AC22018C0A0009337D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C4393AE22018C0A0009337D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C4393B322018C0B0009337D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C4393B622018C0B0009337D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C4393B822018C0B0009337D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C87CD712202260400583F20 /* ProjectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
 		4C87CD782202273700583F20 /* ProjectListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewModel.swift; sourceTree = "<group>"; };
 		4C87CD7A22022E2300583F20 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4C9D8C942201EACC00DB60F8 /* GitHubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubApi.swift; sourceTree = "<group>"; };
+		4C87CD7C2202350300583F20 /* mvvm-model.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-model.png"; sourceTree = "<group>"; };
+		4C87CD7E2202357900583F20 /* mvvm-repository.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-repository.png"; sourceTree = "<group>"; };
+		4C87CD80220235F000583F20 /* mvvm-viewmodel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-viewmodel.png"; sourceTree = "<group>"; };
+		4C87CD822202369300583F20 /* mvvm-viewcontroller1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-viewcontroller1.png"; sourceTree = "<group>"; };
+		4C87CD842202369C00583F20 /* mvvm-viewcontroller2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mvvm-viewcontroller2.png"; sourceTree = "<group>"; };
+		4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
 		4C9D8C962201EB2100DB60F8 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		4C9D8C982201EB6D00DB60F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		83081FFE7A60DDA0E1AAA6DA /* Pods-MVVM Poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,13 +96,17 @@
 		4C4393AB22018C0A0009337D /* MVVM Poc */ = {
 			isa = PBXGroup;
 			children = (
+				4C87CD7C2202350300583F20 /* mvvm-model.png */,
+				4C87CD7E2202357900583F20 /* mvvm-repository.png */,
+				4C87CD80220235F000583F20 /* mvvm-viewmodel.png */,
+				4C87CD822202369300583F20 /* mvvm-viewcontroller1.png */,
+				4C87CD842202369C00583F20 /* mvvm-viewcontroller2.png */,
 				4C4393BE220195E30009337D /* Model */,
 				4C4393BF220195FA0009337D /* View */,
 				4C87CD75220226D100583F20 /* ViewModel */,
 				4C9D8C932201EAAD00DB60F8 /* Repository */,
 				4C4393C02201AD480009337D /* ViewController */,
 				4C4393AC22018C0A0009337D /* AppDelegate.swift */,
-				4C4393AE22018C0A0009337D /* ViewController.swift */,
 				4C4393B322018C0B0009337D /* Assets.xcassets */,
 				4C4393B522018C0B0009337D /* LaunchScreen.storyboard */,
 				4C4393B822018C0B0009337D /* Info.plist */,
@@ -138,7 +150,7 @@
 		4C9D8C932201EAAD00DB60F8 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				4C9D8C942201EACC00DB60F8 /* GitHubApi.swift */,
+				4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -204,8 +216,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C4393B722018C0B0009337D /* LaunchScreen.storyboard in Resources */,
+				4C87CD7D2202350300583F20 /* mvvm-model.png in Resources */,
+				4C87CD81220235F000583F20 /* mvvm-viewmodel.png in Resources */,
+				4C87CD832202369300583F20 /* mvvm-viewcontroller1.png in Resources */,
 				4C4393B422018C0B0009337D /* Assets.xcassets in Resources */,
+				4C87CD7F2202357900583F20 /* mvvm-repository.png in Resources */,
 				4C87CD7B22022E2300583F20 /* Main.storyboard in Resources */,
+				4C87CD852202369C00583F20 /* mvvm-viewcontroller2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,11 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C9D8C952201EACC00DB60F8 /* GitHubApi.swift in Sources */,
+				4C9D8C952201EACC00DB60F8 /* GitHubRepository.swift in Sources */,
 				4C9D8C972201EB2100DB60F8 /* ProjectModel.swift in Sources */,
 				4C87CD722202260400583F20 /* ProjectListViewController.swift in Sources */,
 				4C87CD792202273700583F20 /* ProjectListViewModel.swift in Sources */,
-				4C4393AF22018C0A0009337D /* ViewController.swift in Sources */,
 				4C9D8C992201EB6D00DB60F8 /* UserModel.swift in Sources */,
 				4C4393AD22018C0A0009337D /* AppDelegate.swift in Sources */,
 			);

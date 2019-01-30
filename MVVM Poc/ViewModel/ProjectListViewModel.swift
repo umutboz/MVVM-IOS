@@ -11,7 +11,7 @@ import Foundation
 import RxSwift
 
 class ProjectListViewModel {
-  let dataManager = GitHubApi()
+  let dataManager = GitHubRepository()
   var requestCount = Variable<Int>(0)
   var repos = Variable<[ProjectModel]>([])
   var cachedRepos: [ProjectModel] = []
@@ -29,7 +29,6 @@ class ProjectListViewModel {
     }) { (error) in
         print(error.getDescription())
     }
-
   }
   
   func filter(text: String) {

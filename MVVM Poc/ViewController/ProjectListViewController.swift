@@ -39,19 +39,13 @@ class ProjectListViewController: UIViewController {
     private func setupDataBinding() {
         // Bind request count label
         bindCountLabel()
-        
         // Handle refresh button's click
         bindRefreshButton()
-        
         // Bind data to table view
         bindTableView()
-        
         // Handle search bar
         bindSearchBar()
     }
-    
-    
-    
     private func bindRefreshButton() {
         refreshButton.rx.tap.asObservable()
             .subscribe(onNext: {
@@ -64,13 +58,11 @@ class ProjectListViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
-    
     private func bindTableView() {
         viewModel.repos.asObservable()
             .bind(to: tableView.rx.items(cellIdentifier: "projectListViewCell"))(setupCell)
             .addDisposableTo(disposeBag)
     }
-    
     private func bindSearchBar() {
         searchBar.rx.text.asObservable()
             .filter{$0 != nil}

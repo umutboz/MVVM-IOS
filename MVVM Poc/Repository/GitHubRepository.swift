@@ -9,20 +9,16 @@
 import Foundation
 import Networking
 
-class GitHubApi
+class GitHubRepository
 {
-    
     init() {
         
     }
-    
     public func getProjectList(success: @escaping (ResultModel<ProjectModel>) -> Void,
                                fail: @escaping (ErrorModel) -> Void)
     {
-        
         let url = "https://api.github.com/users/google/repos"
-        let v = NetworkManager().get(url, success: success, fail: fail).fetch()
-        
+        NetworkManager().get(url, success: success, fail: fail).fetch()
     }
     
     public func logon(username: String, password : String) -> UserModel
