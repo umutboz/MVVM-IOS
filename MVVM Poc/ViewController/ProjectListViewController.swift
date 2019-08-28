@@ -24,6 +24,9 @@ class ProjectListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDataBinding()
+        let nib = UINib.init(nibName: "GithubRepoTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "githubCell")
+       
     }
     
     
@@ -32,7 +35,7 @@ class ProjectListViewController: UIViewController {
             .asObservable()
             .map{"Data load time: \($0)"}
             .bind(to: requestCountLabel.rx.text)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     // Setups data binding
@@ -60,8 +63,8 @@ class ProjectListViewController: UIViewController {
     }
     private func bindTableView() {
         viewModel.repos.asObservable()
-            .bind(to: tableView.rx.items(cellIdentifier: "projectListViewCell"))(setupCell)
-            .addDisposableTo(disposeBag)
+            .bind(to: tableView.rx.items(cellIdentifier: "githubCell"))(setupCell)
+            .disposed(by: disposeBag)
     }
     private func bindSearchBar() {
         searchBar.rx.text.asObservable()
@@ -72,7 +75,7 @@ class ProjectListViewController: UIViewController {
             }).disposed(by: disposeBag)
     }
     
-    private func setupCell(row: Int, element: ProjectModel, cell: UITableViewCell){
-        cell.textLabel?.text = element.name
-    }
+    private func setupCell(row: Int, element: ProjectModel, cell: GithubRepoTableViewCell){
+        cell.projectNameLabel.text = element.name
+        cell.descriptionLabel.text = element.teams_url    }
 }

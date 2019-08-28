@@ -21,6 +21,9 @@
 		4C9D8C952201EACC00DB60F8 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */; };
 		4C9D8C972201EB2100DB60F8 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C962201EB2100DB60F8 /* ProjectModel.swift */; };
 		4C9D8C992201EB6D00DB60F8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8C982201EB6D00DB60F8 /* UserModel.swift */; };
+		6CF3E2B52316B9B400F2E8B4 /* GithubRepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3E2B32316B9B400F2E8B4 /* GithubRepoTableViewCell.swift */; };
+		6CF3E2B62316B9B400F2E8B4 /* GithubRepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF3E2B42316B9B400F2E8B4 /* GithubRepoTableViewCell.xib */; };
+		6CF3E2B82316BEB800F2E8B4 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3E2B72316BEB800F2E8B4 /* Owner.swift */; };
 		87D05208B8B154F2F94B3000 /* Pods_MVVM_Poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995326878AC6101EF1FBDA28 /* Pods_MVVM_Poc.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
 		4C9D8C962201EB2100DB60F8 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		4C9D8C982201EB6D00DB60F8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6CF3E2B32316B9B400F2E8B4 /* GithubRepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepoTableViewCell.swift; sourceTree = "<group>"; };
+		6CF3E2B42316B9B400F2E8B4 /* GithubRepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubRepoTableViewCell.xib; sourceTree = "<group>"; };
+		6CF3E2B72316BEB800F2E8B4 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		83081FFE7A60DDA0E1AAA6DA /* Pods-MVVM Poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc.release.xcconfig"; sourceTree = "<group>"; };
 		995326878AC6101EF1FBDA28 /* Pods_MVVM_Poc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Poc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB692B9659D831306AF89A2 /* Pods-MVVM Poc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM Poc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 			children = (
 				4C9D8C962201EB2100DB60F8 /* ProjectModel.swift */,
 				4C9D8C982201EB6D00DB60F8 /* UserModel.swift */,
+				6CF3E2B72316BEB800F2E8B4 /* Owner.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 		4C4393BF220195FA0009337D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CF3E2B22316B96400F2E8B4 /* Shared */,
 				4C87CD7A22022E2300583F20 /* Main.storyboard */,
 			);
 			path = View;
@@ -153,6 +161,15 @@
 				4C9D8C942201EACC00DB60F8 /* GitHubRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		6CF3E2B22316B96400F2E8B4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6CF3E2B32316B9B400F2E8B4 /* GithubRepoTableViewCell.swift */,
+				6CF3E2B42316B9B400F2E8B4 /* GithubRepoTableViewCell.xib */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +237,7 @@
 				4C87CD81220235F000583F20 /* mvvm-viewmodel.png in Resources */,
 				4C87CD832202369300583F20 /* mvvm-viewcontroller1.png in Resources */,
 				4C4393B422018C0B0009337D /* Assets.xcassets in Resources */,
+				6CF3E2B62316B9B400F2E8B4 /* GithubRepoTableViewCell.xib in Resources */,
 				4C87CD7F2202357900583F20 /* mvvm-repository.png in Resources */,
 				4C87CD7B22022E2300583F20 /* Main.storyboard in Resources */,
 				4C87CD852202369C00583F20 /* mvvm-viewcontroller2.png in Resources */,
@@ -259,7 +277,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Networking/Networking.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
@@ -280,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM Poc/Pods-MVVM Poc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -291,11 +309,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9D8C952201EACC00DB60F8 /* GitHubRepository.swift in Sources */,
+				6CF3E2B82316BEB800F2E8B4 /* Owner.swift in Sources */,
 				4C9D8C972201EB2100DB60F8 /* ProjectModel.swift in Sources */,
 				4C87CD722202260400583F20 /* ProjectListViewController.swift in Sources */,
 				4C87CD792202273700583F20 /* ProjectListViewModel.swift in Sources */,
 				4C9D8C992201EB6D00DB60F8 /* UserModel.swift in Sources */,
 				4C4393AD22018C0A0009337D /* AppDelegate.swift in Sources */,
+				6CF3E2B52316B9B400F2E8B4 /* GithubRepoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ struct ProjectModel : Serializable {
     let id : Int?
     let name : String?
     let full_name : String?
-    //let owner : Owner?
+    let owner : Owner?
     //let private : Bool?
     let html_url : String?
     let description : String?
