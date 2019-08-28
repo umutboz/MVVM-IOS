@@ -77,5 +77,8 @@ class ProjectListViewController: UIViewController {
     
     private func setupCell(row: Int, element: ProjectModel, cell: GithubRepoTableViewCell){
         cell.projectNameLabel.text = element.name
-        cell.descriptionLabel.text = element.teams_url    }
+        cell.descriptionLabel.text = element.teams_url
+        cell._logoImage.downloadFromUrl(link: element.owner?.avatar_url)
+        
+    }
 }

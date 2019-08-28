@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353E3ACE23173C2500932042 /* Download+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E3ACD23173C2500932042 /* Download+UIImageView.swift */; };
 		4C4393AD22018C0A0009337D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4393AC22018C0A0009337D /* AppDelegate.swift */; };
 		4C4393B422018C0B0009337D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4393B322018C0B0009337D /* Assets.xcassets */; };
 		4C4393B722018C0B0009337D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C4393B522018C0B0009337D /* LaunchScreen.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		353E3ACD23173C2500932042 /* Download+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Download+UIImageView.swift"; sourceTree = "<group>"; };
 		4C4393A922018C0A0009337D /* MVVM Poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4393AC22018C0A0009337D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C4393B322018C0B0009337D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 				995326878AC6101EF1FBDA28 /* Pods_MVVM_Poc.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		353E3ACC23173BFE00932042 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				353E3ACD23173C2500932042 /* Download+UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		4BC529C92C7AD97067952C4A /* Pods */ = {
@@ -133,6 +143,7 @@
 		4C4393BF220195FA0009337D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				353E3ACC23173BFE00932042 /* Extensions */,
 				6CF3E2B22316B96400F2E8B4 /* Shared */,
 				4C87CD7A22022E2300583F20 /* Main.storyboard */,
 			);
@@ -315,6 +326,7 @@
 				4C87CD792202273700583F20 /* ProjectListViewModel.swift in Sources */,
 				4C9D8C992201EB6D00DB60F8 /* UserModel.swift in Sources */,
 				4C4393AD22018C0A0009337D /* AppDelegate.swift in Sources */,
+				353E3ACE23173C2500932042 /* Download+UIImageView.swift in Sources */,
 				6CF3E2B52316B9B400F2E8B4 /* GithubRepoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
