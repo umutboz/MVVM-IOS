@@ -24,7 +24,7 @@ class ProjectListViewModel {
     requestCount.value += 1
     
     self.dataManager.getProjectList(success: { (response) in
-        self.cachedRepos = try! response.getModel(type:[ProjectModel].self) as! [ProjectModel]
+        self.cachedRepos = try! response.getModel(type:[ProjectModel].self) as [ProjectModel]!
         self.repos.value = self.cachedRepos
     }) { (error) in
         print(error.getDescription())
