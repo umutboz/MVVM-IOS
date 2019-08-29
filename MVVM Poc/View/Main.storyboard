@@ -21,8 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="80b-vI-dR7">
+                                <rect key="frame" x="0.0" y="74" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1az-ao-ggl">
-                                <rect key="frame" x="0.0" y="143.5" width="375" height="523.5"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="fdF-bv-WlE" customClass="GithubRepoTableViewCell" customModule="MVVM_Poc" customModuleProvider="target">
@@ -36,37 +40,25 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-Fl-fIb">
-                                <rect key="frame" x="0.0" y="67" width="375" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="80b-vI-dR7">
-                                <rect key="frame" x="0.0" y="87.5" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1az-ao-ggl" firstAttribute="top" secondItem="80b-vI-dR7" secondAttribute="bottom" id="1h2-K1-shD"/>
-                            <constraint firstItem="80b-vI-dR7" firstAttribute="top" secondItem="5g6-Fl-fIb" secondAttribute="bottom" id="8k7-Vh-Orr"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1az-ao-ggl" secondAttribute="bottom" id="AxM-sC-a3T"/>
-                            <constraint firstItem="5g6-Fl-fIb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LZz-LI-gnS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1az-ao-ggl" secondAttribute="trailing" constant="-16" id="PKc-Tb-8Bg"/>
-                            <constraint firstItem="5g6-Fl-fIb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="3" id="Vl7-5O-INz"/>
-                            <constraint firstItem="1az-ao-ggl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="W53-Ic-33Z"/>
-                            <constraint firstItem="80b-vI-dR7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="exo-g9-DhT"/>
-                            <constraint firstItem="5g6-Fl-fIb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hty-zW-5dx"/>
-                            <constraint firstAttribute="trailing" secondItem="80b-vI-dR7" secondAttribute="trailing" id="wr6-26-w7s"/>
+                            <constraint firstAttribute="trailing" secondItem="1az-ao-ggl" secondAttribute="trailing" id="aw9-Lt-4KH"/>
+                            <constraint firstAttribute="trailing" secondItem="80b-vI-dR7" secondAttribute="trailing" id="d5A-tJ-Btx"/>
+                            <constraint firstItem="80b-vI-dR7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e2v-VN-2ik"/>
+                            <constraint firstItem="1az-ao-ggl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="flD-yD-Qqi"/>
+                            <constraint firstItem="1az-ao-ggl" firstAttribute="top" secondItem="80b-vI-dR7" secondAttribute="bottom" constant="10" id="gvd-qa-Sh8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1az-ao-ggl" secondAttribute="bottom" id="kzb-cG-s1u"/>
+                            <constraint firstItem="80b-vI-dR7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="mg6-FA-UKK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ugo-Qh-euO">
+                        <barButtonItem key="leftBarButtonItem" title="Request Count :" id="8US-Of-B9w"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="I40-Lt-Zyk"/>
                     </navigationItem>
                     <connections>
                         <outlet property="refreshButton" destination="I40-Lt-Zyk" id="Ui2-xQ-sNF"/>
-                        <outlet property="requestCountLabel" destination="5g6-Fl-fIb" id="A06-Sv-gNc"/>
+                        <outlet property="requestCountBarLabel" destination="8US-Of-B9w" id="Lui-Ez-llt"/>
                         <outlet property="searchBar" destination="80b-vI-dR7" id="1kp-ZF-yXF"/>
                         <outlet property="tableView" destination="1az-ao-ggl" id="pVX-Gy-Lns"/>
                     </connections>
